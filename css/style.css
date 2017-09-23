@@ -1,0 +1,39 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+/*Распорка для float*/
+.clearFix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+/*Ширина центровщика и его отступы*/
+.container {
+	width: 940px;
+	padding: 0 10px;
+	margin: 0 auto;
+
+}
+
+
+
+
+
+.mainNavigation{
+	width: 780px;
+	float:left;
+}
+
+.userBlock{
+	width: 140px;
+	float:right;
+}
+
+
+
+/*Рабки для построения сетки*/
+.mainHeader{
+	border:1px solid green;
+}

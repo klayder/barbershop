@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<title>Barbershop</title>
+</head>
+<body>
+	<header class="mainHeader">
+		<div class="container clearFix">
+			<nav class="mainNavigation">
+				<ul>
+					<li><a href="#">Информация</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Прайс-лист</a></li>
+					<li><a href="#">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="userBlock">
+				<a class="login" href="#">Вход</a>
+			</div>			
+		</div>
+	</header>
+	<main class="container">
+		<div class="indexLogo">
+			<img src="img/indexLogo.png" alt="Барбершоп 	&#171;  Бородинский &#187;" width="368" height="204">
+		</div>
+		<section class="features">
+			<div class="featuresNme">
+				<b>Быстро</b>
+				<p>Мы делаем свою работу быстро! Два часа пролетят для вас незаметно
+				   и вы - счастливый обладатель стильной стрижки-минутки!</p>
+			</div>
+			<div class="featuresNme">
+				<b>Круто</b>
+				<p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола
+				   или кино! Во всяком случае внешне.</p>
+			</div>
+			<div class="featuresNme">
+				<b>Дорого</b>
+				<p>Наши мастера - профессионалы своего дела и не могут стоить дешево.
+				   К тому же, разве цена не дает определенный статус?</p>
+			</div>
+		</section>
+		<div class="indexContent">
+			<div class="indexContentLeft">
+				<h2 class="indexContentTitle">Новости</h2>
+				<ul class="newsPrev">
+					<li>
+						<p>Нам наконец завезли Ягермейстер! Теперь вы можете пропустить 
+						стаканчик во время стрижки</p>
+						<time datatime="2016-09-25">25 сентября</time>
+					</li>
+					<li>
+						<p>В нашей команде пополнение, Борис &#171;Бритва&#187; Стругинец,
+						обладатель множества титулов и наград пополнил наши стройные ряды</p>
+						<time datatime="2016-09-19">19 сентября</time>
+					</li>
+				</ul>
+				<a class="btn" href="#">Все новости</a>
+			</div>
+			<div class="indexContentRight">
+				<h2 class="indexContentTitle">Фотогалерея</h2>
+				<div class="gallery">
+					<figure>
+						<img src="img/foto1.jpg" alt="Фото 1" width="268" height="164">
+					</figure>
+					<button class="btn galleryPrev">Назад</button>
+					<button class="btn galleryNext">Вперед</button>
+				</div>
+			</div>
+			<div class="indexContentLeft">
+				<h2 class="indexContentTitle">Контактная информация</h2>
+				<p>Барбершоп 	&#171;  Бородинский &#187;<br>
+					Адрес<br>
+					Телефон</p>
+				<p>Время работы<br>
+					пн-пт<br>
+					сб-вс</p>
+				<a class="btn" href="#">Как проехать</a>
+				<a class="btn" href="#">Обратная связь</a>
+			</div>
+			<div class="indexContentRight">
+				<h2 class="indexContentTitle">Записаться</h2>
+				<p>Укажите желаемое время и дату и мы свяжемся с вами для подтверждения брони</p>
+				<form class="appointmentForm" action="" method="post">
+					<input type="text" name="data" placeholder="Дата" value="">
+					<input type="text" name="time" placeholder="время" value="">
+					<input type="text" name="name" placeholder="Ваше имя" value="">
+					<input type="text" name="phone" placeholder="Телефон" value="">
+					<button class="btn" type="submit">Отправить</button>
+				</form>
+			</div>
+		</div>
+	</main>
+	<footer class="mainFooter">
+		<div class="container">
+			<section class="footerContacts">
+				Барбершоп 	&#171;  Бородинский &#187;<br>
+				Адрес<br>
+				<a href="#">Как нас найти?</a><br>
+				Телефон
+			</section>
+			<section class="footerSocial">
+				<p>Давайте дружить!</p>
+				<a calss="socialBtn socialBtnVk" href="#">Вконтакте</a><br>
+				<a calss="socialBtn socialBtnFb" href="#">Фейсбук</a><br>
+				<a calss="socialBtn socialBtnInst" href="#">Инстаграмм</a><br>
+			</section>
+			<section class="footerCopyright">
+				<p>Разработанно</p>
+				<a href="#">Сорокин Андрей</a>
+				<p>С использованием материалов</p>
+				<a href="#">HTMLAcademy</a>
+			</section>
+		</div>
+	</footer>
+</body>
+</html>
