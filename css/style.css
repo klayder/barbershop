@@ -2,6 +2,8 @@ html,
 body {
 	margin: 0;
 	padding: 0;
+	color: #ffffff;
+	background-color: #000000;
 }
 /*Распорка для float*/
 .clearFix::after{
@@ -16,24 +18,30 @@ body {
 	margin: 0 auto;
 
 }
-
-
-
-
-
+/*ширина центральной навигации и позиционирование по левому краю*/
 .mainNavigation{
 	width: 780px;
 	float:left;
 }
-
+/*Ширина кнопки вход и выравнивание по правому краю*/
 .userBlock{
 	width: 140px;
 	float:right;
 }
-
-
-
-/*Рабки для построения сетки*/
-.mainHeader{
-	border:1px solid green;
+/*Размеры логотипа и его центровка*/
+.indexLogo{
+	width: 368px;
+	height: 204px;
+	margin: 0 auto 25px;
 }
+/*Ширина и выравнивание по правому краю блока особенностей*/
+.featuresItem{
+	width: 300px;
+	float: left;
+	margin-right: 20px;
+}
+/*Отмена отступа для последней особенности*/
+.featuresItem:last-child {
+	margin-right: 0px;
+}
+
