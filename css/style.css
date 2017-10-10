@@ -3,7 +3,46 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #ffffff;
+	text-transform: uppercase;
+	min-width: 960px;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 700;
+	background:#000000 url(../img/barbershopIndexBackground.jpg) no-repeat center top;
+}
+/*Цвет фона для шапки*/
+.mainHeader{
 	background-color: #000000;
+	color: #ffffff;
+	margin-bottom: 60px;
+}
+/*Цвет ссылок шапки и отключение подчеркивания; 
+добавляем отступы */
+.mainNavigation a{
+	color:#ffffff;
+	text-decoration: none;
+
+	display: block;
+	padding: 25px 20px;
+}
+
+.mainNavigation a:hover{
+	background-color: #242424;
+}
+/*Отключение отступов и декорирования у списка ссылок в шапке*/
+.mainNavigation ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;   /*Прием для корректировки отступов блочно-строчной модели*/
+}
+
+.mainNavigation li{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	line-height: 20px;
 }
 /*Распорка для float*/
 .clearFix::after{
@@ -25,8 +64,40 @@ body {
 }
 /*Ширина кнопки вход и выравнивание по правому краю*/
 .userBlock{
-	width: 140px;
+	max-width: 140px;
 	float:right;
+}
+
+.login{
+	font-size: 16px;
+	line-height: 20px;
+	color: #ffffff;
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: top;
+	padding: 25px 20px;
+	padding-left: 50px;
+
+	position: relative;
+}
+/*иконка для кнопки вход*/
+.login::before {
+	content: "";
+	width: 18px;
+	height: 18px;
+	background: transparent url(../img/sprite.png);
+	background-position: -10px -93px;
+	position: absolute;
+	top: 28px;
+	left: 20px;
+	opacity: 0.3;
+}
+
+.login:hover::before{
+	opacity: 1;
+}
+.login:hover{
+	background-color: #242424;
 }
 /*Размеры логотипа и его центровка*/
 .indexLogo{
@@ -39,9 +110,210 @@ body {
 	width: 300px;
 	float: left;
 	margin-right: 20px;
+
+	text-align: center;
 }
+
+
 /*Отмена отступа для последней особенности*/
 .featuresItem:last-child {
 	margin-right: 0px;
 }
 
+.features{
+	margin-bottom: 80px;
+}
+
+.featureName{
+	display: block;
+	font-size: 30px;
+	line-height: 42px;
+	margin-bottom: 30px;
+	padding-bottom: 35px;
+	position: relative;
+}
+
+.featuresItem p{
+	margin: 10px;
+	margin-bottom: 0;
+}
+
+.featureName::after{
+	content: "";
+	width: 20px;
+	height: 20px;
+	display: block;
+	background-color: #ffffff;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -10px;
+	transform: rotate(45deg);
+	
+}
+
+.indexContent{
+	padding: 50px 80px;
+	margin-bottom: 35px;
+
+	background: url(../img/contentShadow.png) no-repeat center, #f8f5f2 url("../img/patternWhite.jpg");
+	color: #000000;
+}
+
+.indexContentTitle{
+	margin: 0;
+	margin-bottom: 25px;
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.indexContent p{
+	margin: 0;
+	margin-bottom: 25px;
+}
+
+.newsPrev{
+	margin: 0;
+	padding: 0;
+	padding-right: 35px;
+	list-style: none;
+}
+
+.newsPrev li{
+	margin-bottom: 25px;
+}
+
+.newsPrev p{
+	margin-bottom: 0;
+}
+
+.newsPrev time{
+	text-transform: none;
+}
+
+.btn{
+	color: #ffffff;
+	background-color: #000000;
+	border:none;
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: 'PT Sans Narrow', 'Arial' sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px 33px;
+	vertical-align: top;
+	text-align: center;
+	margin-right: 16px;
+
+}
+
+.btn:hover,
+.btn:active{
+background-color: #663d15;
+}
+
+.btn.disabled,
+.btn:disabled{
+	cursor: default;
+	opacity: 0.5;
+}
+
+.btn.disabled:hover,
+.btn:disabled:hover {
+	background-color: #000000;
+}
+
+.indexContentLeft{
+	float: left;
+	width: 380px;
+}
+
+.indexContentRight{
+	float: right;
+	width: 300px;
+}
+
+.gallery{
+	position: relative;
+	height: 260px;
+}
+
+.galleryContent{
+	margin: 0;
+	height: 164px;
+	background-color: #cccccc;
+	border: 7px solid #ffffff;
+}
+
+.galleryContent img{
+	width: 286px;
+	height: 164px;
+}
+
+.gallery .btn{
+	position: absolute;
+	bottom: 0;
+	width: 140px;
+	margin: 0;
+}
+
+.galleryPrev{
+	left: 0;
+}
+
+.galleryNext{
+	right: 0;
+}
+
+.appointmentForm input{
+	background-color: #f9f6f3;
+	border: 2px solid #000000;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 700;
+	font-family: 'PT Sans Narrow', 'Arial' sans-serif;
+	text-transform: uppercase;
+	width: 106px;
+	padding: 7px 15px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.appointmentForm input:nth-child(2n){
+	margin-right: 0;
+}
+
+.appointmentForm .btn{
+	clear: both;
+	width: 100%;
+}
+
+.appointmentForm input:focus{
+	border: 2px solid #663d15;
+}
+
+.mainFooter{
+	margin-top: 65px;
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.footerContacts{
+	float: left;
+	width: 320px;
+	margin-right: 60px;
+}
+
+.footerSocial{
+	float: left;
+	width: 180px;
+}
+
+.footerCopyright{
+	float: right;
+	width: 180px;
+}
