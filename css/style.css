@@ -300,6 +300,8 @@ background-color: #663d15;
 	margin-top: 65px;
 	padding-top: 60px;
 	padding-bottom: 40px;
+
+	background: #252525 url("../img/patternGrey.png");
 }
 
 .footerContacts{
@@ -308,10 +310,49 @@ background-color: #663d15;
 	margin-right: 60px;
 }
 
-.footerSocial{
+.footerContacts a{
+	color: #ffffff;
+}
+
+footerContacts a:hover{
+	text-decoration: none;
+}
+
+.footerSocial {
 	float: left;
 	width: 180px;
+	text-align: center;
 }
+
+.footerSocial p{
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.socialBtn{
+	display: inline-block;
+	width: 43px;
+	height: 43px;
+	margin: 0 2px;
+
+	font-size: 0;
+	vertical-align: top;
+	text-decoration: none;
+	background: #000000 url("../img/sprite.png") no-repeat center;
+}
+
+.socialBtnVk{
+	background-position: -2px -115px;
+}
+
+.socialBtnFb{
+	background-position: 6px 0px;
+}
+
+.socialBtnInst{
+	background-position: 2px -42px;
+}
+
 
 .footerCopyright{
 	float: right;
