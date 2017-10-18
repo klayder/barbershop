@@ -1,5 +1,6 @@
 html,
 body {
+	height: 100%;
 	margin: 0;
 	padding: 0;
 	color: #ffffff;
@@ -11,6 +12,13 @@ body {
 	font-weight: 700;
 	background:#000000 url(../img/barbershopIndexBackground.jpg) no-repeat center top;
 }
+
+.innerPage{
+	background: #f8f5f2 url("../img/patternWhite.png");
+	color: #000000;
+}
+
+
 /*Цвет фона для шапки*/
 .mainHeader{
 	background-color: #000000;
@@ -27,9 +35,39 @@ body {
 	padding: 25px 20px;
 }
 
+.mainNavigation .innerLogo{
+	float: left;
+	width: 111px;
+	height: 20px;
+	padding-top: 25px;
+}
+
 .mainNavigation a:hover{
 	background-color: #242424;
 }
+
+.mainNavigation .innerLogo:hover,
+.mainNavigation .active a:hover{
+	background-color: #000000;
+}
+
+.mainNavigation .active{
+	position: relative;
+	background: none;
+}
+
+.mainNavigation .active::after{
+	content: "";
+	position: absolute;
+	height: 5px;
+	background-color: #ffffff;
+	bottom: 0;
+	right: 20px;
+	left: 20px;
+}
+
+
+
 /*Отключение отступов и декорирования у списка ссылок в шапке*/
 .mainNavigation ul{
 	margin: 0;
@@ -86,7 +124,7 @@ body {
 	width: 18px;
 	height: 18px;
 	background: transparent url(../img/sprite.png);
-	background-position: -10px -93px;
+	background-position: -10px -10px;
 	position: absolute;
 	top: 28px;
 	left: 20px;
@@ -156,7 +194,7 @@ body {
 	padding: 50px 80px;
 	margin-bottom: 35px;
 
-	background: url(../img/contentShadow.png) no-repeat center, #f8f5f2 url("../img/patternWhite.jpg");
+	background: url(../img/contentShadow.png) no-repeat center, #f8f5f2 url("../img/patternWhite.png") ;
 	color: #000000;
 }
 
@@ -296,13 +334,29 @@ background-color: #663d15;
 	border: 2px solid #663d15;
 }
 
+.wrap{
+	min-height: 100%;
+	position: relative;
+}
+
+
 .mainFooter{
 	margin-top: 65px;
 	padding-top: 60px;
 	padding-bottom: 40px;
-
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
 	background: #252525 url("../img/patternGrey.png");
+	color: #ffffff;
 }
+
+.content{
+	padding-bottom: 250px;
+}
+
+
 
 .footerContacts{
 	float: left;
@@ -339,22 +393,55 @@ footerContacts a:hover{
 	vertical-align: top;
 	text-decoration: none;
 	background: #000000 url("../img/sprite.png") no-repeat center;
+	transition: 
+		background-position 0.5s,
+		background-color 0.5s;
+
 }
 
 .socialBtnVk{
-	background-position: -2px -115px;
+	background-position: -1px -33px;
+
+}
+
+.socialBtnVk:hover{
+	background-position: -1px -69px;
 }
 
 .socialBtnFb{
-	background-position: 6px 0px;
+	background-position: 5px -190px;
 }
+
+.socialBtnFb:hover{
+	background-position: 5px -232px;
+}
+
 
 .socialBtnInst{
-	background-position: 2px -42px;
+	background-position: 1px -107px;
 }
 
+.socialBtnInst:hover{
+	background-position: 1px -148px;
+}
+
+.socialBtn:hover{
+	background-color: #ffffff;
+}
 
 .footerCopyright{
 	float: right;
-	width: 180px;
+	max-width: 180px;
+
+}
+
+.footerCopyright p{
+	margin: 0;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.footerCopyright .btn{
+	margin-right: 0;
+	
 }
