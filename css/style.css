@@ -3,21 +3,32 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	color: #ffffff;
 	text-transform: uppercase;
 	min-width: 960px;
 	font-family: 'PT Sans Narrow', sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 700;
-	background:#000000 url(../img/barbershopIndexBackground.jpg) no-repeat center top;
+	
+
 }
+
+body{
+	background:#000000 url(../img/barbershopIndexBackground.jpg) no-repeat center top;
+	color: #ffffff;
+}
+
 
 .innerPage{
+	
 	background: #f8f5f2 url("../img/patternWhite.png");
 	color: #000000;
+	
 }
 
+.redTest{
+	color: red;
+}
 
 /*Цвет фона для шапки*/
 .mainHeader{
@@ -445,3 +456,5 @@ footerContacts a:hover{
 	margin-right: 0;
 	
 }
+
+
