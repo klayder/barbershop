@@ -345,6 +345,22 @@ background-color: #663d15;
 	border: 2px solid #663d15;
 }
 
+.bigHeading{
+	position: relative;
+	text-align: center;
+	font-size: 36px;/*chek size!*/
+
+}
+
+.innerContent .pricesTable{
+	border: 2px solid black;
+}
+
+
+
+
+
+
 .wrap{
 	min-height: 100%;
 	position: relative;
@@ -379,7 +395,7 @@ background-color: #663d15;
 	color: #ffffff;
 }
 
-footerContacts a:hover{
+.footerContacts a:hover{
 	text-decoration: none;
 }
 
@@ -456,5 +472,7 @@ footerContacts a:hover{
 	margin-right: 0;
 	
 }
+
+
 
 
