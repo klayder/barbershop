@@ -345,20 +345,182 @@ background-color: #663d15;
 	border: 2px solid #663d15;
 }
 
-.bigHeading{
+
+/*Стили price*/
+.innerPageTitle{
+	margin-bottom: 55px;
+}
+
+.innerPageTitle h1{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.breadCrumbs{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.breadCrumbs li{
 	position: relative;
+	display: inline;
+	padding-right: 40px;
+}
+
+.breadCrumbs a{
+	color: #000000;
+	text-decoration: none;
+}
+
+.breadCrumbs a[href]:hover{
+	text-decoration: underline;
+}
+
+.breadCrumbs li:last-child a{
+	color: #aba9a7;
+}
+
+.breadCrumbs li::after{
+	content: "";
+	position: absolute;
+	top: 4px;
+	right: 18px;
+	width: 8px;
+	height: 8px;
+	background-color: #000000;
+	transform: rotate(45deg);
+}
+
+.breadCrumbs li:last-child::after{
+	display: none;
+	
+}
+
+
+
+
+.innerContent h2{
+	margin-top: 60px;
+	margin-bottom: 30px;
+	font-size: 24px;
+	line-height: 30px;
+
+}
+
+.bigHeading{
+	margin-top: 55px;
+	margin-bottom: 65px;
 	text-align: center;
-	font-size: 36px;/*chek size!*/
 
 }
 
-.innerContent .pricesTable{
-	border: 2px solid black;
+.bigHeading h2{
+	font-size: 48px;
+	line-height: 48px;
+	display: inline-block;
+	margin: 0;
+	padding: 0 25px;
+	background: #f8f5f2 url("../img/patternWhite.png");
+	position: relative;
+	z-index: 2;
+}
+
+.bigHeading::after{
+	content: "";
+	display: block;
+	border-bottom: 2px solid #000000;
+	position: relative;
+	top: -25px;
+}
+
+.innerContent p{
+	margin: 14px 0;
+}
+
+.innerContent h2 + h3{
+	margin-top: 30px;
+}
+
+.innerContent table{
+	border-collapse: collapse;
+
+}
+
+.innerContent td{
+	padding: 10px 15px;
+	border: 2px solid #000000;
+}
+
+.pricesTable{
+	width: 100%;
+}
+
+.pricesTable td{
+	width: 50%;
+}
+
+.pricesTable td:last-child{
+	text-align: center;
 }
 
 
+.customList1{
+	margin: 14px 0;
+	padding: 0;
+	list-style: none;
+}
+
+.customList1 li{
+	position: relative;
+	margin-bottom: 15px;
+	padding-left: 20px;
+}
 
 
+.customList1 li::before{
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: 0;
+	
+	width: 8px;
+	height: 8px;
+	background-color: #000000;
+	transform: rotate(45deg);
+}
+
+.innerColums{
+	margin: 60px 0;
+
+}
+
+.innerColumLeft{
+	float: left;
+	width: 460px;
+}
+
+.innerColumRight{
+	float: right;
+	width: 460px;
+}
+
+.innerColumLeft *:first-child,
+.innerColumRight *:first-child{
+	margin-top: 0;
+}
+
+.innerColumLeft *:last-child,
+.innerColumRight *:last-child{
+	margin-bottom: : 0;
+}
+
+.shortText{
+	padding-right: 80px;
+}
 
 
 .wrap{
@@ -377,6 +539,7 @@ background-color: #663d15;
 	bottom: 0;
 	background: #252525 url("../img/patternGrey.png");
 	color: #ffffff;
+	box-shadow: inset 0px 30px 40px -15px #000;
 }
 
 .content{
@@ -473,6 +636,154 @@ background-color: #663d15;
 	
 }
 
+.modalContent{
+	display: none;
+	width: 300px;
+	padding: 50px 80px;
+	color: #000000;
+	background: #f8f5f2 url("../img/patternWhite.png");
+	position: absolute;
+	top: 120px;
+	left: 50%;
+	margin-left: -230px;
+	box-shadow: 0 30px 50px rgba(0,0,0,0.7);
+}
+
+.modalContentClose{
+	width: 22px;
+	height: 22px;
+	font-size: 0;
+	line-height: 0;
+	background-color: transparent;
+	border: 0 ;
+	cursor: pointer;
+	position: absolute;
+	top:0;
+	right: -34px;
+}
+
+.modalContentClose::before,
+.modalContentClose::after{
+	content: "";
+	position: absolute;
+	width: 19px;
+	height: 3px;
+	background-color: #d0d0d0;
+	border-radius: 1px;
+	top: 10px;
+	left: 2px;
+}
 
 
+.modalContentClose::before{
+	transform: rotate(45deg);
+}
 
+.modalContentClose::after{
+	transform: rotate(-45deg);
+}
+
+.modalContent h2{
+	margin: 0;
+	margin-bottom: 20px;
+	font-size: 30px;
+	line-height: 42px;
+	font-weight: 700;
+}
+
+.modalContent p{
+	margin: 0;
+	margin-bottom: 14px;
+}
+
+.modalContent .loginForm{
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.loginForm input[type="text"],
+.loginForm input[type="password"]{
+	font-size: 14px;
+	line-height: 24px;
+	font-family: "PT Sans Narrow", "Arial",sans-serif;
+	color: #000000;
+	text-transform: uppercase;
+	font-weight: 700;
+	width: 241px;
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 10px 15px;
+	padding-right: 40px;
+	background-color: #f9f6f3;
+	border: 2px solid #000000;
+}
+
+.loginForm input:focus{
+	border-color: #663d15;
+}
+
+.loginForm input.iconPassword{
+	background-image: url("../img/modalSprite.png");
+	background-repeat: no-repeat;
+	background-position: 100%  -30px;
+	
+}
+
+.loginForm input.iconUser{
+	background-image: url("../img/modalSprite.png");
+	background-repeat: no-repeat;
+	background-position: 100%  5px;
+}
+
+.loginForm .restore{
+	float: right;
+	color: #000000;
+}
+
+.loginForm .btn{
+	width: 100%;
+	margin-top: 15px;
+}
+
+.loginCheckbox{
+	position: relative;
+	padding-left: 30px;
+	cursor: pointer;
+}
+
+.loginCheckbox:hover{
+	color: #663d15;
+}
+
+.loginCheckbox input[type="checkbox"]{
+	display: none;
+}
+
+.loginCheckbox input[type="checkbox"]+.checkboxIndicator{
+	position: absolute;
+	top: -3px;
+	left: 0;
+	width: 17px;
+	height: 17px;
+	border: 2px solid #000000;
+}
+
+
+.loginCheckbox input[type="checkbox"]:checked+.checkboxIndicator::before,
+.loginCheckbox input[type="checkbox"]:checked+.checkboxIndicator::after{
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: 1px;
+	width: 15px;
+	height: 2px;
+	background-color: #000000;
+}
+
+.loginCheckbox input[type="checkbox"]:checked+.checkboxIndicator::before{
+	transform: rotate(45deg);
+}
+
+.loginCheckbox input[type="checkbox"]:checked+.checkboxIndicator::after{
+	transform: rotate(-45deg);
+}
